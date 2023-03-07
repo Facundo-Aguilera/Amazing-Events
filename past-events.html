@@ -44,24 +44,32 @@
     <main>
         <div class="filter">
             <form action="get" class="check">
-                <label for="">
-                    Category
+                <label for="FoodFair">
+                    Food Fair
                     <input type="checkbox">
                 </label>
-                <label for="">
-                    Category
+                <label for="Museum">
+                    Museum
                     <input type="checkbox">
                 </label>
-                <label for="">
-                    Category
+                <label for="CostumeParty">
+                    Costume Party
                     <input type="checkbox">
                 </label>
-                <label for="">
-                    Category
+                <label for="MusicConcert">
+                    Music Concert
                     <input type="checkbox">
                 </label>
-                <label for="">
-                    Category
+                <label for="Race">
+                    Race
+                    <input type="checkbox">
+                </label>
+                <label for="BookExchange">
+                    Book Exchange
+                    <input type="checkbox">
+                </label>
+                <label for="Cinema">
+                    Cinema
                     <input type="checkbox">
                 </label>
             </form>
@@ -74,45 +82,7 @@
                 </label>
             </form>
         </div>
-
-        <div class="container-cards">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/img/Cinema.jpg" class="card-img-top" alt="Cinema">
-                <div class=" card-body">
-                <h5 class="card-title">Cinema</h5>
-                <p class="card-text">Texto descriptivo</p>
-                <p>Price $000000</p>
-                <a href="./card-detail.html" class="btn btn-primary">Ver más...</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./assets/img/Costume_Party.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Titulo</h5>
-                <p class="card-text">Texto descriptivo</p>
-                <p>Price $000000</p>
-                <a href="#" class="btn btn-primary">Ver más...</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./assets/img/Food_Fair.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Titulo</h5>
-                <p class="card-text">Texto descriptivo</p>
-                <p>Price $000000</p>
-                <a href="#" class="btn btn-primary">Ver más...</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./assets/img/Marathon.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Titulo</h5>
-                <p class="card-text">Texto descriptivo</p>
-                <p>Price $000000</p>
-                <a href="#" class="btn btn-primary">Ver más...</a>
-            </div>
-        </div>
-        </div>
+        <div id="importarTarjetas"></div>
     </main>
 
     <footer>
@@ -128,9 +98,11 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="./assets/js/data.js"></script>
+<script src="./assets/js/pastEvents.js"></script>
 
 </html>

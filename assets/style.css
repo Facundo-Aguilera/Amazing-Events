@@ -18,7 +18,6 @@ nav picture img {
     width: 100px;
 }
 
-
 .nav-superior {
     background-color: rgb(216, 254, 255);
     height: 4em;
@@ -48,31 +47,119 @@ nav picture img {
 nav a {
     text-decoration: none;
     color: black;
+    transition-duration: 0.5s;
+    border-radius: 50%;
+    background-color: rgb(216, 254, 255);
+}
+
+nav a:hover {
+    color: white;
+    transition-duration: 0.5s;
+    border-radius: 50%;
+    background-color: black;
+    padding: 5px;
+    box-shadow: 5px 5px 10px red;
 }
 
 .nav-superior a {
+    font-weight: 500;
     margin-left: 1em;
-    background-color: white;
+    background-color: rgb(216, 254, 255);
     border-style: solid;
     border-width: 1px;
     padding: 3px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    transition-duration: 0.7s;
+}
+
+.nav-superior a:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.7s;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px red;
 }
 
 .filter {
     display: flex;
     justify-content: space-between;
     padding: 1em 4em 0em 4em;
+    margin-top: 1em;
 }
 
 .check label {
     padding-right: 1em;
 }
 
-.container-cards {
-    margin: 4em 2em 0em 2em;
+#importarTarjetas {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 3em;
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.container-cards {
+    background-color: rgb(216, 254, 255);
+    display: flex;
+    flex-direction: column;
+    max-width: 18em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    margin-bottom: 2em;
+    justify-content: space-between
+}
+
+.container-cards img {
+    height: 10em;
+}
+
+.container-cards h5 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.container-cards p {
+    text-align: justify;
+    margin: 0px 5px;
+}
+
+.precio-ver-mas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.precio-ver-mas a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(203, 240, 240);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    text-align: center;
+    margin: 1em 0em;
+    padding: 5px;
+    font-weight: bold;
+    transition-duration: 0.7s;
+}
+
+.precio-ver-mas a:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.7s;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px red;
+}
+
+.precio-ver-mas p {
+    margin: 1.5em 0em;
+    font-weight: bold;
 }
 
 .contact {
@@ -83,12 +170,19 @@ nav a {
     border-width: 1px;
     padding: 2em;
     background-color: rgb(216, 254, 255);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
 }
 
 .card-detail {
     width: 80%;
     margin-left: 10%;
     margin-top: 4em;
+    background-color: rgb(216, 254, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
 }
 
 .foto-card-detail {
@@ -107,7 +201,7 @@ nav a {
     justify-content: space-around;
     border-style: solid;
     border-width: 1px;
-    padding: 2em;
+    padding: 1em;
 }   
 
 footer { 
@@ -133,6 +227,8 @@ table {
     width: 80%;
     margin-left: 10%;
     background-color: rgb(203, 240, 240);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
 }
 
 table td {
@@ -146,7 +242,8 @@ table td {
 
 @media (max-width: 900px) {
     .filter {
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .menu-pc {
@@ -154,10 +251,23 @@ table td {
     }
 
     .menu-phone {
-        display:inline-block;
-        border: 1px solid;
-        padding: 2px 4px 2px 4px;
-        border-radius: 20%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+        flex-wrap: wrap;
+    }
+
+    .menu-phone a {
+        font-size: 13px;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 500;
+        background-color: rgb(216, 254, 255);
+        border-style: solid;
+        border-width: 1px;
+        padding: 3px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px;
     }
 
     .nav-inferior p {
