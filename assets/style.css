@@ -81,9 +81,10 @@ nav a:hover {
     box-shadow: 5px 5px 10px red;
 }
 
-.filter {
+#checkContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 1em 4em 0em 4em;
     margin-top: 1em;
 }
@@ -92,7 +93,12 @@ nav a:hover {
     padding-right: 1em;
 }
 
-#importarTarjetas {
+.buscadorTexto {
+    margin-left: 77.5%;
+    margin-top: 1em;
+}
+
+#contenedor {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
