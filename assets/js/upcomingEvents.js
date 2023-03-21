@@ -35,7 +35,7 @@ function crearTarjetas(data) {
                 <p class="descrption">${data.events[i].description}</p>
                 <div class="precio-ver-mas">
                     <p class="precio">USD $${data.events[i].price}</p>
-                    <a href="./card-detail.html">See more</a>
+                    <a href="./card-detail.html?id=${data.events[i]._id}">See more</a>
                 </div>
             </div>
             </div>

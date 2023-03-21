@@ -223,6 +223,10 @@ nav a:hover {
     width: 100%;
 }
 
+.precio-ver-mas-Card-Detail p {
+    font-weight: bold;
+}
+
 footer { 
     margin-top: auto;
     background-color: rgb(216, 254, 255);
@@ -242,7 +246,7 @@ footer {
 
 table {
     border: 1px solid;
-    margin-top: 4em;
+    margin-top: 2em;
     width: 80%;
     margin-left: 10%;
     background-color: rgb(203, 240, 240);
