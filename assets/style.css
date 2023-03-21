@@ -81,21 +81,23 @@ nav a:hover {
     box-shadow: 5px 5px 10px red;
 }
 
+.filtrosCheckYTexto {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2em;
+}
+
 #checkContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1em 4em 0em 4em;
-    margin-top: 1em;
 }
 
-.check label {
-    padding-right: 1em;
-}
-
-.buscadorTexto {
-    margin-left: 77.5%;
-    margin-top: 1em;
+#checkContainer label {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #contenedor {
@@ -116,7 +118,7 @@ nav a:hover {
     border-width: 1px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     justify-content: space-between
 }
 
@@ -181,8 +183,8 @@ nav a:hover {
 }
 
 .card-detail {
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
     margin-top: 4em;
     background-color: rgb(216, 254, 255);
     border-style: solid;
@@ -200,6 +202,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    justify-content: space-around;
 }
 
 .contenedor-card {
@@ -209,6 +212,20 @@ nav a:hover {
     border-width: 1px;
     padding: 1em;
 }   
+
+.contenedor-card p {
+    text-align: center;
+}
+
+.precio-ver-mas-Card-Detail {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.precio-ver-mas-Card-Detail p {
+    font-weight: bold;
+}
 
 footer { 
     margin-top: auto;
@@ -229,7 +246,7 @@ footer {
 
 table {
     border: 1px solid;
-    margin-top: 4em;
+    margin-top: 2em;
     width: 80%;
     margin-left: 10%;
     background-color: rgb(203, 240, 240);
