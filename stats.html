@@ -42,65 +42,44 @@
     </header>
 
     <main>
-        <table class="table-information">
+        <div id="contenedorTabla">
+          <table class="table caption-top">
+            <caption>Events Statistics</caption>
             <thead>
-                <tr>
-                    <th rowspan="3">Events Statistics</th>
-                </tr>
-            <thead>
-            <tbody>
-                <tr>
-                    <td>Events with the highest percentage of atlendance</td>
-                    <td>Events with the highest percentage of atlendance</td>
-                    <td>Event with larger capacity</td>
-                </tr>
-                <tr>
-                    <td>asd </td>
-                    <td> asd</td>
-                    <td> asd</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="table-information">
-            <thead>
-                <tr>
-                    <th rowspan="3">Upcoming events statistics by category</th>
-                </tr>
+              <tr>
+                <th scope="col">Events with the highest percentage of attendance</th>
+                <th scope="col">Events with the lowest percentage of attendance</th>
+                <th scope="col">Event with larger capacity</th>
+              </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage of altendance</td>
-                </tr>
-                <tr>
-                    <td>asd </td>
-                    <td> asd</td>
-                    <td> asd</td>
-                </tr>
+            <tbody id="tabla1">
             </tbody>
         </table>
-
-        <table class="table-information">
+        <table class="table caption-top">
+            <caption>Upcoming events statistics by category</caption>
             <thead>
-                <tr>
-                    <th rowspan="3">Past events statistic by category</th>
-                </tr>
+              <tr>
+                <th scope="col">Categories</th>
+                <th scope="col">Revenues</th>
+                <th scope="col">Percentage of attendance</th>
+              </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Categories</td>
-                    <td>Revenues</td>
-                    <td>Percentage of altendance</td>
-                </tr>
-                <tr>
-                    <td>asd </td>
-                    <td> asd</td>
-                    <td> asd</td>
-                </tr>
+            <tbody id="tabla2">
             </tbody>
         </table>
+        <table class="table caption-top">
+            <caption>Past Events Statistic by category</caption>
+            <thead>
+              <tr>
+                <th scope="col">Categories</th>
+                <th scope="col">Revenues</th>
+                <th scope="col">Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody id="tabla3">
+            </tbody>
+        </table>
+        </div>
     </main>
 
     <footer>
@@ -119,6 +98,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="./assets/jsParaAPI/statsAPI.js"></script>
 </body>
 
 </html>

@@ -11,8 +11,8 @@ const traerInfo = async () => {
         const respuesta = await fetch('https://mindhub-xj03.onrender.com/api/amazing')
         let eventsObjet = await respuesta.json()
         let eventsArray = eventsObjet.events
-        input.addEventListener('input', ()=>crearTarjetasFiltradas(superFiltro(eventsArray, input.value)))
-        contenedorChecks.addEventListener('change', ()=>filtrarPorCatoria(superFiltro(eventsArray)))
+        input.addEventListener('input', superFiltro)
+        contenedorChecks.addEventListener('change', superFiltro)
         categorias(eventsArray);
         crearTarjetas(eventsArray);
 
@@ -85,24 +85,25 @@ const traerInfo = async () => {
             let arrayFiltrado = array.filter(element => element.name.toLowerCase().includes(texto.toLowerCase()))
             return arrayFiltrado
         }
-        
-        function filtrarPorCatoria(eventsObjet) {
+
+        function filtrarPorCategoria(array) {
             let checkboxes = document.querySelectorAll("input[type='checkbox']")
             let arrayChecks = Array.from(checkboxes)
             let checksChecked = arrayChecks.filter(element => element.checked)
             if (checksChecked.length == 0) {
-                return eventsObjet
+                return array
             }
             let checkValues = checksChecked.map(check => check.value)
-            let arrayFiltrado = eventsArray.filter(element => checkValues.includes(element.category))
+            let arrayFiltrado = array.filter(element => checkValues.includes(element.category))
             return arrayFiltrado
         }
 
         function superFiltro() {
-            let arrayFiltrado1 = filtrarPorTexto(eventsArray, input.value)
-            let arrayFiltrado2 = filtrarPorCatoria(arrayFiltrado1)
-            crearTarjetasFiltradas(arrayFiltrado2)
+            let arrayFiltrado1 = filtrarPorTexto(eventsArray, input.value);
+            let arrayFiltrado2 = filtrarPorCategoria(arrayFiltrado1);
+            crearTarjetasFiltradas(arrayFiltrado2);
         }
+
     } catch (error) {
         console.log(error);
         alert('Error')
