@@ -44,6 +44,22 @@ nav picture img {
     font-size: 2rem;
 }
 
+.nav-inferior-details {
+    background-color: rgb(203, 240, 240);
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.nav-inferior-details p {
+    margin: 0px 0px 0px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 nav a {
     text-decoration: none;
     color: black;
@@ -119,7 +135,9 @@ nav a:hover {
     border-radius: 5px;
     box-shadow: 5px 5px 10px;
     margin-bottom: 3em;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .container-cards img {
@@ -268,42 +286,35 @@ table caption {
     font-weight: bold;
 }
 
-.menu-phone {
+.dropdown {
     display: none;
 }
 
+.divBackHome {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.BackHome {
+    padding: 3px 4px 3px 4px;
+}
+
+
 @media (max-width: 900px) {
-    .filter {
-        display: flex;
-        flex-direction: column;
+
+    #contenedorTabla {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+
+    .dropdown {
+        display: inline-block;
     }
 
     .menu-pc {
         display: none;
-    }
-
-    .menu-phone {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 1em;
-        flex-wrap: wrap;
-    }
-
-    .menu-phone a {
-        font-size: 13px;
-        display: flex;
-        justify-content: space-around;
-        font-weight: 500;
-        background-color: rgb(216, 254, 255);
-        border-style: solid;
-        border-width: 1px;
-        padding: 3px;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px;
-    }
-
-    .nav-inferior p {
-        font-size: 1.5rem;
     }
 
     .contact {
@@ -315,8 +326,7 @@ table caption {
 
     table {
         margin-top: 2em;
-        width: 90%;
-        margin-left: 5%;
+        width: 100%;
     }
 
     .card-detail {
@@ -334,9 +344,19 @@ table caption {
         align-items: center;
     }
 
+    .nav-inferior p {
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (max-width: 570px) {
+
+
+    .menu-pc {
+        display: none;
+    }
+
     .card-detail {
         width: 90%;
         margin-left: 5%;
@@ -346,4 +366,24 @@ table caption {
     .foto-card-detail {
         width: 300px;
     }   
+
+    .filtrosCheckYTexto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-inferior p {
+        font-size: 1rem;
+    }
+
+    #contenedorTabla {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+
+    .table {
+        margin-top: 2em;
+        width: 100%;
+    }
 }

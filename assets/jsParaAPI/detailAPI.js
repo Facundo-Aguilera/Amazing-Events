@@ -8,7 +8,7 @@ const traerInfo = async () => {
         const respuesta = await fetch('https://mindhub-xj03.onrender.com/api/amazing')
         let eventsObjet = await respuesta.json()
         let eventsArray = eventsObjet.events.find(element => element._id == id)
-
+        console.log(eventsArray);
 
 div.innerHTML = `
     <div class="contenedor-card">
@@ -21,8 +21,15 @@ div.innerHTML = `
         <h3>${eventsArray.name}</h3>
         <p>${eventsArray.description}</p>
         <div class="precio-ver-mas-Card-Detail">
-            <p>${eventsArray.date}</p>
-            <p>USD ${eventsArray.price}</p>
+            <p>Capacity: ${eventsArray.capacity}</p>
+        </div>
+        <div class="precio-ver-mas-Card-Detail">
+        <p>Category: ${eventsArray.category}</p>
+        <p>Place: ${eventsArray.place}</p>
+        </div>
+        <div class="precio-ver-mas-Card-Detail">
+        <p>${eventsArray.date}</p>
+        <p>USD ${eventsArray.price}</p>
         </div>
     </div>
     </div>
